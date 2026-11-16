@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vana Digital Media | Real estate social media design</title>
+<meta name="description" content="Listing ads, promo videos and captions for real estate agents, property managers, landlords and developers in Kenya and worldwide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5F8F6;--surface:#FFFFFF;--ink:#16241F;--muted:#55665F;--line:#D5E0DA;
+  --brand:#0E3B2E;--brand-ink:#FFFFFF;--accent:#E9B44C;--accent-ink:#2A1E00;--sage:#DDEBE3;
+  --display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0D1613;--surface:#15221D;--ink:#EAF2EE;--muted:#9DB0A7;--line:#2A3B34;--brand:#E9B44C;--brand-ink:#2A1E00;--accent:#E9B44C;--accent-ink:#2A1E00;--sage:#1B2D26;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#0D1613;--surface:#15221D;--ink:#EAF2EE;--muted:#9DB0A7;--line:#2A3B34;--brand:#E9B44C;--brand-ink:#2A1E00;--accent:#E9B44C;--accent-ink:#2A1E00;--sage:#1B2D26;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--body)}
+h1,h2,h3{font-family:var(--display);line-height:1.1;margin:0;letter-spacing:-.01em}
+h1{font-size:clamp(2.2rem,7vw,3.8rem);font-weight:800}
+h2{font-size:clamp(1.7rem,4.5vw,2.4rem);font-weight:800;margin-bottom:.6rem}
+h3{font-size:1.25rem;font-weight:600}
+p{margin:0 0 1rem;max-width:62ch}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.25rem}
+section{padding:3.5rem 0}
+header.top{display:flex;flex-wrap:wrap;gap:.6rem 1rem;justify-content:space-between;align-items:center;padding:1rem 1.25rem;max-width:1080px;margin:0 auto}
+.tools{display:flex;gap:.5rem}
+.tools select{background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:.35rem .5rem;font:inherit;font-size:.9rem}
+details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.9rem 1.1rem;margin-bottom:.7rem}
+summary{cursor:pointer;font-weight:600}
+details p{margin:.6rem 0 0;color:var(--muted)}
+.logo{font-family:var(--display);font-weight:800;font-size:1.15rem;text-decoration:none}
+.logo span{color:var(--muted);font-weight:600}
+nav a{margin-left:1.1rem;text-decoration:none;color:var(--muted);font-weight:600;font-size:.95rem}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--brand);color:var(--brand-ink);padding:.85rem 1.4rem;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--brand)}
+.btn.alt{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn:hover{filter:brightness(1.08)}
+.row{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.4rem}
+.hero{display:grid;gap:2.5rem;grid-template-columns:1fr;align-items:center;padding-top:2rem}
+@media(min-width:820px){.hero{grid-template-columns:1.15fr .85fr}}
+.hero p.lead{font-size:1.2rem;color:var(--muted);margin-top:1.1rem}
+.post{border-radius:18px;padding:1.4rem;min-height:260px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;color:#fff}
+.post small{position:absolute;top:.8rem;left:1rem;background:rgba(0,0,0,.35);padding:.15rem .6rem;border-radius:99px;font-size:.78rem}
+.post b{font-family:var(--display);font-size:1.6rem;line-height:1.05;display:block}
+.post em{font-style:normal;opacity:.9;font-size:.98rem}
+.post .tag{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:600;font-size:.85rem;padding:.15rem .7rem;border-radius:99px;margin-bottom:.6rem;align-self:flex-start}
+.p1{background:linear-gradient(160deg,#1F6B54,#0E3B2E)}
+.p2{background:linear-gradient(160deg,#3A4F8A,#1B2A55)}
+.p3{background:linear-gradient(160deg,#8A5A2B,#4C2F12)}
+.hero .post{min-height:340px;transform:rotate(2deg);box-shadow:0 18px 40px rgba(14,59,46,.28)}
+.grid{display:grid;gap:1.1rem;grid-template-columns:1fr}
+@media(min-width:720px){.grid.three{grid-template-columns:repeat(3,1fr)}.grid.two{grid-template-columns:repeat(2,1fr)}}
+.band{background:var(--sage)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.4rem}
+.card.feature{border:2px solid var(--brand)}
+.price{font-family:var(--display);font-size:1.9rem;font-weight:800;margin:.4rem 0}
+.price span{font-size:.95rem;color:var(--muted);font-weight:400;font-family:var(--body)}
+.card ul{padding-left:1.1rem;margin:.6rem 0 1.2rem;color:var(--muted)}
+.card li{margin-bottom:.3rem}
+ol.steps{list-style:none;counter-reset:s;padding:0;margin:1.2rem 0 0;display:grid;gap:1rem}
+ol.steps li{counter-increment:s;display:grid;grid-template-columns:2.4rem 1fr;gap:.9rem}
+ol.steps li::before{content:counter(s);background:var(--brand);color:var(--brand-ink);width:2.4rem;height:2.4rem;border-radius:50%;display:grid;place-items:center;font-weight:600}
+ol.steps strong{display:block}
+.note{color:var(--muted);font-size:.92rem}
+footer{padding:2.5rem 0 3rem;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
+@media(prefers-reduced-motion:no-preference){.hero .post{animation:settle .7s ease-out both}}
+@keyframes settle{from{transform:rotate(7deg) translateY(18px);opacity:0}to{transform:rotate(2deg);opacity:1}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="#top">Vana <span>Digital Media</span></a>
+  <nav aria-label="Main"><a href="#work" data-i18n="nWork">Work</a><a href="#packages" data-i18n="nPk">Packages</a><a href="#process" data-i18n="nProc">Process</a><a href="#contact" data-i18n="nCon">Contact</a></nav>
+  <div class="tools">
+    <select id="cur" aria-label="Currency"><option value="KES">KSh</option><option value="USD">USD</option><option value="EUR">EUR</option><option value="GBP">GBP</option></select>
+    <select id="lang" aria-label="Language"><option value="en">English</option><option value="sw">Kiswahili</option></select>
+  </div>
+</header>
+
+<main id="top">
+<div class="wrap">
+  <div class="hero">
+    <div>
+      <h1 data-i18n="h1">Listings that get noticed before the viewing.</h1>
+      <p class="lead" data-i18n="lead">Social media ads, short promo videos and captions for real estate agents, landlords, land sellers and developers in Kenya and worldwide.</p>
+      <div class="row">
+        <a class="btn" href="https://wa.me/254700000000?text=Hi%20Vana%2C%20I%27d%20like%20a%20free%20sample%20for%20my%20listing." target="_blank" rel="noopener" data-i18n="cta">Get a free sample</a>
+        <a class="btn alt" href="#packages" data-i18n="seePk">See packages</a>
+      </div>
+    </div>
+    <div class="post p1" role="img" aria-label="Sample concept: just listed three bedroom apartment in Kilimani">
+      <small>Sample concept</small>
+      <span class="tag">Just listed</span>
+      <b>3 bedroom apartment, Kilimani</b>
+      <em>Master en-suite · Backup water · Viewing this Saturday</em>
+    </div>
+  </div>
+</div>
+
+<section id="work">
+  <div class="wrap">
+    <h2 data-i18n="hSamples">Sample concepts</h2>
+    <p>Designs for fictional properties, built to show the style. Your listings get the same treatment, with your photos and branding.</p>
+    <div class="grid three">
+      <div class="post p1" role="img" aria-label="Sample concept: just listed"><small>Sample concept</small><span class="tag">Just listed</span><b>3BR, Kilimani</b><em>KSh 14.5M · Viewing Saturday</em></div>
+      <div class="post p2" role="img" aria-label="Sample concept: now available rental"><small>Sample concept</small><span class="tag">Now available</span><b>1BR, Ruaka</b><em>KSh 28,000/month · Move in this week</em></div>
+      <div class="post p3" role="img" aria-label="Sample concept: plots for sale"><small>Sample concept</small><span class="tag">Plots for sale</span><b>50×100 plots, Kitengela</b><em>Ready title · Site visit every Sunday</em></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="packages">
+  <div class="wrap">
+    <h2 data-i18n="hPk">Packages</h2>
+    <p>Start small with the starter package, then move to a monthly plan so your pages keep posting.</p>
+    <div class="grid two" style="margin-top:1.2rem">
+      <div class="card">
+        <h3>Starter package</h3>
+        <div class="price"><b data-price="starter">KSh 5,000</b> <span data-i18n="once">one-time</span></div>
+        <ul><li>5 designs for your listings</li><li>3 short promo videos</li><li>Captions for every post</li><li>Delivered in 3 to 4 days</li></ul>
+        <a class="btn" href="https://wa.me/254700000000?text=Hi%20Vana%2C%20I%27d%20like%20the%20Starter%20package." target="_blank" rel="noopener">Order the starter</a>
+      </div>
+      <div class="card feature">
+        <h3>Growth plan</h3>
+        <div class="price"><b data-price="growth">KSh 20,000</b> <span data-i18n="mo">per month</span></div>
+        <ul><li>12 designs and 4 videos a month</li><li>Captions and hashtags</li><li>1 revision round per batch</li><li>Paid at the start of each month</li></ul>
+        <a class="btn" href="https://wa.me/254700000000?text=Hi%20Vana%2C%20I%27d%20like%20to%20know%20more%20about%20the%20Growth%20plan." target="_blank" rel="noopener">Ask about Growth</a>
+      </div>
+    </div>
+    <p class="note" style="margin-top:1rem">Need more volume or a content calendar? Ask about the Pro plan (<b data-price="pro">KSh 35,000</b>/month). Prices are fixed list prices in each currency; payment details are confirmed on WhatsApp.</p>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <h2 data-i18n="hHow">How it works</h2>
+    <ol class="steps">
+      <li><div><strong>Send your listings</strong>Share photos, price and details on WhatsApp.</div></li>
+      <li><div><strong>Approve the sample</strong>You see a free sample first, so you know the style before paying.</div></li>
+      <li><div><strong>Pay and we start</strong>Pay by M-Pesa or bank transfer; work begins right away.</div></li>
+      <li><div><strong>Get your content</strong>Designs, videos and captions arrive ready to post.</div></li>
+    </ol>
+  </div>
+</section>
+
+<section id="pay">
+  <div class="wrap">
+    <h2 data-i18n="hPay">Pay the way that suits you</h2>
+    <div class="grid three" style="margin-top:1.2rem">
+      <div class="card"><h3>In Kenya</h3><p class="note" style="margin-top:.5rem">M-Pesa or bank transfer. Most Kenyan clients pay by M-Pesa.</p></div>
+      <div class="card"><h3>Anywhere else</h3><p class="note" style="margin-top:.5rem">PayPal, Wise or Payoneer. I send an invoice in your currency.</p></div>
+      <div class="card"><h3>Terms</h3><p class="note" style="margin-top:.5rem">Starter is paid upfront. Monthly plans are paid at the start of each month. Work begins once payment arrives.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="faq">
+  <div class="wrap">
+    <h2 data-i18n="hFaq">Common questions</h2>
+    <details><summary>Do you work with clients outside Kenya?</summary><p>Yes. I design for Kenyan listings and for agents, landlords and developers abroad, including diaspora sellers. Content is in English, with Swahili captions on request.</p></details>
+    <details><summary>What about time zones?</summary><p>I’m based in Kenya (EAT, UTC+3). Delivery is counted in days, not hours, so time zones rarely slow anything down. Message any time and I’ll reply during my working day.</p></details>
+    <details><summary>What do I need to send?</summary><p>Photos, price, location, contact details, and your logo and brand colours if you have them.</p></details>
+    <details><summary>Can I request changes?</summary><p>Each batch includes one revision round. Extra rounds can be added if you need them.</p></details>
+    <details><summary>Do I own the designs?</summary><p>Yes. Once payment is complete, the files are yours to use on any platform.</p></details>
+  </div>
+</section>
+
+<section class="band" id="contact">
+  <div class="wrap">
+    <h2 data-i18n="hContact">Let’s make your next listing stand out</h2>
+    <p>Message on WhatsApp with a link to your page or a listing, and I’ll send a free sample concept.</p>
+    <div class="row">
+      <a class="btn" href="https://wa.me/254700000000?text=Hi%20Vana%2C%20I%27d%20like%20a%20free%20sample%20for%20my%20listing." target="_blank" rel="noopener">Message on WhatsApp</a>
+      <a class="btn alt" href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      <a class="btn alt" href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Vana Digital Media</span>
+    <span>Based in Kenya (EAT, UTC+3), working with clients worldwide. Sample designs are concepts for fictional properties.</span>
+  </div>
+</footer>
+<script>
+(function(){
+  var P={KES:{starter:5000,growth:20000,pro:35000,f:function(n){return 'KSh '+n.toLocaleString('en-US')}},
+    USD:{starter:39,growth:155,pro:270,f:function(n){return '$'+n}},
+    EUR:{starter:36,growth:140,pro:245,f:function(n){return '€'+n}},
+    GBP:{starter:30,growth:120,pro:210,f:function(n){return '£'+n}}};
+  var T={sw:{nWork:'Kazi',nPk:'Vifurushi',nProc:'Mchakato',nCon:'Wasiliana',
+    h1:'Matangazo yanayoonekana kabla ya kutembelea nyumba.',
+    lead:'Matangazo ya mitandao ya kijamii, video fupi na maelezo kwa mawakala wa nyumba, wamiliki wa majengo, wauzaji wa ardhi na wasanidi nchini Kenya na duniani kote.',
+    cta:'Pata sampuli ya bure',seePk:'Angalia vifurushi',hSamples:'Sampuli za dhana',hPk:'Vifurushi',once:'mara moja',mo:'kwa mwezi',
+    hHow:'Jinsi inavyofanya kazi',hPay:'Lipa kwa njia unayopendelea',hFaq:'Maswali ya mara kwa mara',hContact:'Tufanye tangazo lako lijulikane'}};
+  var els=document.querySelectorAll('[data-i18n]'),orig={};
+  els.forEach(function(e){orig[e.getAttribute('data-i18n')]=e.textContent});
+  function lang(l){
+    document.documentElement.lang=l;
+    els.forEach(function(e){var k=e.getAttribute('data-i18n');e.textContent=(T[l]&&T[l][k])||orig[k]});
+  }
+  function cur(c){
+    document.querySelectorAll('[data-price]').forEach(function(e){var p=P[c];e.textContent=p.f(p[e.getAttribute('data-price')])});
+  }
+  function save(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+  function load(k){try{return localStorage.getItem(k)}catch(e){return null}}
+  var nl=(navigator.language||'en').toLowerCase(),region=(nl.split('-')[1]||'').toUpperCase(),tz='';
+  try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}
+  var c=load('cur');
+  if(!c||!P[c]){
+    c='USD';
+    if(region==='KE'||tz==='Africa/Nairobi')c='KES';
+    else if(region==='GB')c='GBP';
+    else if(['DE','FR','IT','ES','NL','IE','PT','BE','AT','FI','GR'].indexOf(region)>-1)c='EUR';
+  }
+  var l=load('lang')||(nl.indexOf('sw')===0?'sw':'en');
+  var cs=document.getElementById('cur'),ls=document.getElementById('lang');
+  cs.value=c;ls.value=l;cur(c);lang(l);
+  cs.addEventListener('change',function(){cur(cs.value);save('cur',cs.value)});
+  ls.addEventListener('change',function(){lang(ls.value);save('lang',ls.value)});
+})();
+</script>
+</body>
+</html>
