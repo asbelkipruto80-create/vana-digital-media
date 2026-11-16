@@ -1,0 +1,13 @@
+{
+  "name": "Vana Digital Media",
+  "short_name": "Vana Media",
+  "description": "Social media designs and promo videos for real estate.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0E3B2E",
+  "theme_color": "#0E3B2E",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
